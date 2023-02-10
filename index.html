@@ -14,11 +14,11 @@
     <main class="container">
         <div class="row">
             <!-- login -->
-            <div class="col-3" id="login">
+            <div class="col-3" id="">
                 <div class="card shadow">
                     <div class="card-header"><h3>Login</h3></div>
                     <div class="card-body">
-                        <form class="form" action="">
+                        <form id="form-login" class="form" action="">
                             <input type="email" class="form-control mt-2" placeholder="email">
                             <input type="password" class="form-control mt-2" placeholder="Contraseña">
                             <button id="btn-login" class="btn btn-primary mt-4 w-100">Enviar</button>
@@ -28,11 +28,11 @@
                 
             </div>
             <!-- registro -->
-            <div class="col-3" id="login">
+            <div class="col-3" id="">
                 <div class="card shadow ">
                     <div class="card-header"><h3>Registro</h3></div>
                     <div class="card-body">
-                        <form class="form" action="">
+                        <form id="form-registro" class="form" action="">
                             <input type="text" class="form-control mt-2" placeholder="Nombre" name="nombre">
                             <input type="email" class="form-control mt-2" placeholder="Email" name="email">
                             <input type="password" class="form-control mt-2" placeholder="Contraseña" name="password">
@@ -42,12 +42,28 @@
                 </div>
                 
             </div>
-            <!-- tabla usuarios -->
-            <div class="col-3" id="login">
-                <div class="card shadow">
-                    <div class="card-header"><h3>Usuarios</h3></div>
+            <!-- Insertar juegos -->
+            <div class="col-3" id="">
+                <div class="card shadow ">
+                    <div class="card-header"><h3>Juegos</h3></div>
                     <div class="card-body">
-                        <table class="table">
+                        <form id="form-juegos" class="form" action="">
+                            <input type="text" class="form-control mt-2" placeholder="Nombre" name="nombre">
+                            <textarea class="form-control mt-2" id="descripcion" rows="3">Descripción del juego</textarea>
+                            <button id="btn-registro" class="btn btn-success mt-4 w-100">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="row mt-5">
+            <!-- tabla usuarios -->    
+            <div class="col-3" id="">
+                <div class="card shadow">
+                    <div class="card-header"><h3>Tabla Usuarios</h3></div>
+                    <div class="card-body">
+                        <table id="tabla-usuarios" class="table">
                             <thead>
                                 <tr>
                                     <th>Id</th>
@@ -72,12 +88,12 @@
                 </div>
                 
             </div>
-            <!-- tabla usuarios -->
-            <div class="col-3" id="login">
+            <!-- tabla Juegos -->
+            <div class="col-3" id="">
                 <div class="card shadow">
-                    <div class="card-header"><h3>Juegos</h3></div>
+                    <div class="card-header"><h3>Tabla Juegos</h3></div>
                     <div class="card-body">
-                        <table class="table">
+                        <table id="tabla-juegos" class="table">
                             <thead>
                                 <tr>
                                     <th>Id</th>
@@ -102,12 +118,13 @@
                 </div>
                 
             </div>
-            <!-- tabla usuarios -->
-            <div class="col-12" id="login">
-                <div class="card shadow mt-5">
-                    <div class="card-header"><h3>Comentarios</h3></div>
+            
+            <!-- tabla comentarios -->
+            <div class="col-6" id="">
+                <div class="card shadow">
+                    <div class="card-header"><h3>Tabla Comentarios</h3></div>
                     <div class="card-body">
-                        <table class="table">
+                        <table id="tabla-comentarios" class="table">
                             <thead>
                                 <tr>
                                     <th>Id</th>
@@ -133,8 +150,7 @@
                         </table>
                     </div>
                 </div>
-                
-            </div>
+            </div>            
         </div>
         
     </main>
